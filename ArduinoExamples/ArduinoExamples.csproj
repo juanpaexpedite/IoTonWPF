@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{C7721E80-CC88-424F-B8C5-6BFED0BF8261}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Temperature\DS18B20Reader.ino" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Temperature\DS18B20Information.ino" />
+    <None Include="Temperature\Readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Temperature\Wiring-Waterproof-DS18B20-Temperature-Sensor-to-Arduino.png" />
+  </ItemGroup>
+</Project>

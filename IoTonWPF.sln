@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoTonWPF", "IoTonWPF\IoTonWPF.csproj", "{1DF261A3-2AD5-4352-9E61-4A388246B8B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArduinoExamples", "ArduinoExamples\ArduinoExamples.csproj", "{C7721E80-CC88-424F-B8C5-6BFED0BF8261}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DF261A3-2AD5-4352-9E61-4A388246B8B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DF261A3-2AD5-4352-9E61-4A388246B8B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7721E80-CC88-424F-B8C5-6BFED0BF8261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7721E80-CC88-424F-B8C5-6BFED0BF8261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7721E80-CC88-424F-B8C5-6BFED0BF8261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7721E80-CC88-424F-B8C5-6BFED0BF8261}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E0FAEDA-F1A9-479D-8894-2DEC063319C1}
+	EndGlobalSection
+EndGlobal
