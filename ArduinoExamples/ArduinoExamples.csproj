@@ -4,6 +4,7 @@
     <ProjectGuid>{C7721E80-CC88-424F-B8C5-6BFED0BF8261}</ProjectGuid>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="CP2102ToWPF\Arduino_DS18B20_CP2101.fzz" />
     <None Include="Temperature\DS18B20Reader.ino" />
   </ItemGroup>
   <ItemGroup>
@@ -11,6 +12,11 @@
     <None Include="Temperature\Readme.md" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CP2102ToWPF\Arduino_DS18B20_CP2101.jpg" />
+    <Content Include="CP2102ToWPF\Arduino_DS18B20_CP2101_mod.png" />
+    <Content Include="CP2102ToWPF\CP2102_detail.jpg" />
+    <Content Include="Temperature\DS18B20Reading.png" />
     <Content Include="Temperature\Wiring-Waterproof-DS18B20-Temperature-Sensor-to-Arduino.png" />
   </ItemGroup>
+  <ItemGroup />
 </Project>

@@ -1,12 +1,37 @@
-﻿<Window x:Class="IoTonWPF.MainWindow"
+﻿<c:MetroWindow x:Class="IoTonWPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:c="http://metro.mahapps.com/winfx/xaml/controls"
+               xmlns:cmp="clr-namespace:IoTonWPF.Components"
         xmlns:local="clr-namespace:IoTonWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
-</Window>
+        Title="Data Logger v0.1" Height="720" Width="1280" TitleForeground="White">
+    <Border Background="{StaticResource LCDPanelBrush}">
+    <Grid Margin="12">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="320"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid DataContext="{StaticResource ProcessedViewModel}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="128"/>
+                    <RowDefinition Height="128"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="256"/>
+                    <ColumnDefinition Width="256"/>
+                </Grid.ColumnDefinitions>
+
+                <cmp:DataBox Label="Temperature Area 0" Data="{Binding TemperatureArea0}"/>
+            </Grid>
+
+        <cmp:COMBox Grid.Column="1"/>
+
+            <cmp:RawDataBox DataContext="{StaticResource SensorsViewModel}" Data="{Binding RawData}" Label="RAW Data" VerticalAlignment="Bottom" Height="256" />
+        </Grid>
+    </Border>
+</c:MetroWindow>

@@ -15,7 +15,7 @@ void setup()
     Serial.println("Searching DS18B20 devices...");
     
     int amount = sensorDS18B20.getDeviceCount();
-    Serial.println("Found ");
+    Serial.print("Found ");
     Serial.print(amount);
     Serial.println(" DS18B20 sensors.");
 

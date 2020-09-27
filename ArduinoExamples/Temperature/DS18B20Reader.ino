@@ -1,4 +1,6 @@
-﻿#include <DallasTemperature.h>
+﻿//Remember install Onewire and DallasTemperature to compile
+//And disconnect the CP2102 Adapter to deploy into the Arduino
+#include <DallasTemperature.h>
 
 const int DataPin = 9;
  
@@ -13,19 +15,19 @@ void setup() {
  
   Serial.println("Searching DS18B20 devices...");
   int amount = DS18B20.getDeviceCount();
-  Serial.println("Found ");
+  Serial.print("Found ");
   Serial.print(amount);
   Serial.println(" DS18B20 sensors.");
 }
 
 void loop() {
 
-  Serial.println("Sending commands");
   DS18B20.requestTemperatures();
  
-  Serial.print("Temperature Area 0: ");
+  //Sending a line
+  Serial.print("Temperature Area0 ");
   Serial.print(DS18B20.getTempC(Area0_Address));
-  Serial.println(" Cº");
+  Serial.println(" C");
   
   delay(1000);
 }
